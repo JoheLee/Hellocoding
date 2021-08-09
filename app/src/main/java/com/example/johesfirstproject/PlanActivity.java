@@ -46,6 +46,12 @@ public class PlanActivity extends AppCompatActivity {
         binding.date.setText(source.get(5));
         binding.date.setText(source.get(6));
 
+        binding.twelveam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Show Dialog
+            }
+        });
     }
 
     public ArrayList<String> AddItemsToRecyclerViewArrayList()

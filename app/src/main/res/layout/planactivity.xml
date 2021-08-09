@@ -43,223 +43,393 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/twelveam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12 AM"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent" />
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 AM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/oneam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1 AM"
-                app:layout_constraintTop_toBottomOf="@+id/twelveam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/twelveam">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01 AM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/twoam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2 AM"
-                app:layout_constraintTop_toBottomOf="@+id/oneam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/oneam">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02 AM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/threeam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3 AM"
-                app:layout_constraintTop_toBottomOf="@+id/twoam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/twoam">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03 AM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/fouram"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4 AM"
-                app:layout_constraintTop_toBottomOf="@+id/threeam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/threeam">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04 AM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/fiveam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5 AM"
-                app:layout_constraintTop_toBottomOf="@+id/fouram"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/fouram">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05 AM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/sixam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6 AM"
-                app:layout_constraintTop_toBottomOf="@+id/fiveam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/fiveam">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06 AM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/sevenam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="7 AM"
-                app:layout_constraintTop_toBottomOf="@+id/sixam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/sixam">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="07 AM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/eightam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8 AM"
-                app:layout_constraintTop_toBottomOf="@+id/sevenam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/sevenam">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08 AM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/nineam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9 AM"
-                app:layout_constraintTop_toBottomOf="@+id/eightam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/eightam">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09 AM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/tenam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="10 AM"
-                app:layout_constraintTop_toBottomOf="@+id/nineam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/nineam">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 AM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/elevenam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="11 AM"
-                app:layout_constraintTop_toBottomOf="@+id/tenam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/tenam">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11 AM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/twelvepm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12 PM"
-                app:layout_constraintTop_toBottomOf="@+id/elevenam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"  />
+                app:layout_constraintTop_toBottomOf="@+id/elevenam">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 PM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/onepm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1 PM"
-                app:layout_constraintTop_toBottomOf="@+id/twelvepm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/twelvepm">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01 PM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/twopm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2 PM"
-                app:layout_constraintTop_toBottomOf="@+id/onepm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/onepm">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02 PM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/threepm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3 PM"
-                app:layout_constraintTop_toBottomOf="@+id/twopm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/twopm">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03 PM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/fourpm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4 PM"
-                app:layout_constraintTop_toBottomOf="@+id/threepm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/threepm">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 PM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/fivepm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text= "5 PM"
-                app:layout_constraintTop_toBottomOf="@+id/fourpm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/fourpm">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 PM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/sixpm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6 PM"
-                app:layout_constraintTop_toBottomOf="@+id/fivepm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/fivepm">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 PM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/sevenpm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="7 PM"
-                app:layout_constraintTop_toBottomOf="@+id/sixpm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/sixpm">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7 PM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/eightpm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8 PM"
-                app:layout_constraintTop_toBottomOf="@+id/sevenpm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/sevenpm">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8 PM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/ninepm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9 PM"
-                app:layout_constraintTop_toBottomOf="@+id/eightpm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/eightpm">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9 PM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/tenpm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="10 PM"
-                app:layout_constraintTop_toBottomOf="@+id/ninepm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/ninepm">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 PM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/elevenpm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="11 PM"
-                app:layout_constraintTop_toBottomOf="@+id/tenpm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/plan_item_height"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="40dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/tenpm">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11 PM"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
