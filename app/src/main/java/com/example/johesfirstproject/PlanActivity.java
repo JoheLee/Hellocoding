@@ -42,12 +42,39 @@ public class PlanActivity extends AppCompatActivity {
         binding.date6.setText(source.get(5));
         binding.date7.setText(source.get(6));
 
-        binding.twelveam.setOnClickListener(new View.OnClickListener() {
+        binding.twelveam.setOnClickListener(onClickListener("12 AM", "01 AM"));
+        binding.oneam.setOnClickListener(onClickListener("01 AM", "02 AM"));
+        binding.twoam.setOnClickListener(onClickListener("02 AM", "03 AM"));
+        binding.threeam.setOnClickListener(onClickListener("03 AM", "04 AM"));
+        binding.fouram.setOnClickListener(onClickListener("04 AM", "05 AM"));
+        binding.fiveam.setOnClickListener(onClickListener("05 AM", "06 AM"));
+        binding.sixam.setOnClickListener(onClickListener("06 AM", "07 AM"));
+        binding.sevenam.setOnClickListener(onClickListener("07 AM", "08 AM"));
+        binding.eightam.setOnClickListener(onClickListener("08 AM", "09 AM"));
+        binding.nineam.setOnClickListener(onClickListener("09 AM", "10 AM"));
+        binding.tenam.setOnClickListener(onClickListener("10 AM", "11 AM"));
+        binding.elevenam.setOnClickListener(onClickListener("11 AM", "12 PM"));
+        binding.twelvepm.setOnClickListener(onClickListener("12 PM", "01 PM"));
+        binding.onepm.setOnClickListener(onClickListener("01 PM", "02 PM"));
+        binding.twopm.setOnClickListener(onClickListener("02 PM", "03 PM"));
+        binding.threepm.setOnClickListener(onClickListener("03 PM", "04 PM"));
+        binding.fourpm.setOnClickListener(onClickListener("04 PM", "05 PM"));
+        binding.fivepm.setOnClickListener(onClickListener("05 PM", "06 PM"));
+        binding.sixpm.setOnClickListener(onClickListener("06 PM", "07 PM"));
+        binding.sevenpm.setOnClickListener(onClickListener("07 PM", "08 PM"));
+        binding.eightpm.setOnClickListener(onClickListener("08 PM", "09 PM"));
+        binding.ninepm.setOnClickListener(onClickListener("09 PM", "10 PM"));
+        binding.tenpm.setOnClickListener(onClickListener("10 PM", "11 PM"));
+        binding.elevenpm.setOnClickListener(onClickListener("11 PM", "12 AM"));
+    }
+
+    private View.OnClickListener onClickListener(String startTime, String endTime) {
+        return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Show Dialog
                 AlertDialog.Builder builder = new AlertDialog.Builder(PlanActivity.this);
-                builder.setMessage("From 01AM to 02AM");
+                builder.setMessage("From " + startTime + " to " + endTime);
                 // Get the layout inflater
                 LayoutInflater inflater = getLayoutInflater();
                 // Inflate and set the layout for the dialog
@@ -82,7 +109,7 @@ public class PlanActivity extends AppCompatActivity {
                         });
                 builder.create().show();
             }
-        });
+        };
     }
 
     public ArrayList<String> getNext7Days()
