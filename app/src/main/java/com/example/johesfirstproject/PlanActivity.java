@@ -50,7 +50,12 @@ public class PlanActivity extends AppCompatActivity {
                 LayoutInflater inflater = getLayoutInflater();
                 // Inflate and set the layout for the dialog
                 // Pass null as the parent view because its going in the dialog layout
-                builder.setView(inflater.inflate(R.layout.dialog, null))
+                View view = inflater.inflate(R.layout.dialog, null);
+                // TODO:
+                //  NumberPicker picker = view.findViewById(R.id.picker);
+
+
+                builder.setView(view)
                         // Add action buttons
                         .setPositiveButton("Update", new DialogInterface.OnClickListener() {
                             @Override
