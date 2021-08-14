@@ -4,6 +4,8 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.NumberPicker;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.johesfirstproject.databinding.PlanactivityBinding;
@@ -52,8 +54,18 @@ public class PlanActivity extends AppCompatActivity {
                 // Pass null as the parent view because its going in the dialog layout
                 View view = inflater.inflate(R.layout.dialog, null);
                 // TODO:
-                //  NumberPicker picker = view.findViewById(R.id.picker);
+                NumberPicker picker = view.findViewById(R.id.numberpicker_main_picker);
+                picker.setMaxValue(3);
+                picker.setMinValue(0);
+                String[] pickerVals  = new String[] {"Study", "Exercise", "Free Time", "Sleep"};
+                picker.setDisplayedValues(pickerVals);
 
+                picker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+                    @Override
+                    public void onValueChange(NumberPicker numberPicker, int i, int i1) {
+                        int valuePicker1 = picker.getValue();
+                    }
+                });
 
                 builder.setView(view)
                         // Add action buttons
