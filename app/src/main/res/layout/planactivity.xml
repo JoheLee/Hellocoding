@@ -155,18 +155,8 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:text="14 Sat"/>
 
-
-
-
-
-
-
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </HorizontalScrollView>
-
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -187,12 +177,20 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
                 <TextView
+                    android:id="@+id/twelveamTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="12 AM"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/twelveamSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@+id/twelveamTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

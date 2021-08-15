@@ -15,6 +15,9 @@ public interface PlannerDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insert(Planner planner);
 
+    @Query("DELETE FROM planner_table WHERE `from` = :from AND `to` = :to AND `date` = :date")
+    void deleteItem(String from, String to, String date);
+
     @Query("DELETE FROM planner_table")
     void deleteAll();
 

@@ -32,4 +32,10 @@ public class PlannerRepository {
             plannerDao.insert(planner);
         });
     }
+
+    void deleteItem(String from, String to, String date) {
+        PlannerRoomDatabase.databaseWriteExecutor.execute(() -> {
+            plannerDao.deleteItem(from, to, date);
+        });
+    }
 }

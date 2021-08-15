@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.johesfirstproject.databinding.PlanactivityBinding;
@@ -19,12 +20,14 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 public class PlanActivity extends AppCompatActivity {
 
     PlanactivityBinding binding;
     PlannerViewModel viewModel;
+    String currentlySelectedDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,8 @@ public class PlanActivity extends AppCompatActivity {
         binding.date6.setText(source.get(5));
         binding.date7.setText(source.get(6));
 
+        currentlySelectedDate = source.get(0);
+
         binding.twelveam.setOnClickListener(onClickListener("12 AM", "01 AM"));
         binding.oneam.setOnClickListener(onClickListener("01 AM", "02 AM"));
         binding.twoam.setOnClickListener(onClickListener("02 AM", "03 AM"));
@@ -74,6 +79,29 @@ public class PlanActivity extends AppCompatActivity {
         binding.ninepm.setOnClickListener(onClickListener("09 PM", "10 PM"));
         binding.tenpm.setOnClickListener(onClickListener("10 PM", "11 PM"));
         binding.elevenpm.setOnClickListener(onClickListener("11 PM", "12 AM"));
+
+        viewModel.getPlanner().observe(this, new Observer<List<Planner>>() {
+            @Override
+            public void onChanged(List<Planner> planners) {
+                List<Planner> currentPlanners = new ArrayList<>();
+                for (int i = 0; i < planners.size(); i++) {
+                    if (planners.get(i).date.equals(currentlySelectedDate)) {
+                        currentPlanners.add(planners.get(i));
+                    }
+                }
+
+                updatePlanner(currentPlanners);
+            }
+        });
+    }
+
+    private void updatePlanner(List<Planner> currentPlanners) {
+        for (int i = 0; i < currentPlanners.size(); i++) {
+            Planner currentPlanner = currentPlanners.get(i);
+            switch (currentPlanner.from) {
+                case "12 AM": binding.twelveamSubject.setText(currentPlanner.subject);
+            }
+        }
     }
 
     private View.OnClickListener onClickListener(String startTime, String endTime) {
@@ -96,25 +124,24 @@ public class PlanActivity extends AppCompatActivity {
                 String[] pickerVals  = new String[] {"Study", "Exercise", "Free Time", "Sleep"};
                 picker.setDisplayedValues(pickerVals);
 
-                picker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
-                    @Override
-                    public void onValueChange(NumberPicker numberPicker, int i, int i1) {
-                        int valuePicker1 = picker.getValue();
-                    }
-                });
-
                 builder.setView(view)
                         // Add action buttons
                         .setPositiveButton("Update", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int id) {
-                                if (subject.getText().toString().equals("")) {
+                                String subjectText = subject.getText().toString();
+                                String category = pickerVals[picker.getValue()];
+
+                                if (subjectText.equals("")) {
                                     Context context = getApplicationContext();
                                     CharSequence text = "fill out subject ";
                                     int duration = Toast.LENGTH_SHORT;
 
                                     Toast toast = Toast.makeText(context, text, duration);
                                     toast.show();
+                                } else {
+                                    viewModel.deleteItem(startTime, endTime, currentlySelectedDate);
+                                    viewModel.insert(new Planner(subjectText, category, startTime, endTime, currentlySelectedDate));
                                 }
                             }
                         })

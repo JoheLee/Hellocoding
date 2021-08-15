@@ -14,4 +14,5 @@ public class PlannerViewModel extends ViewModel {
     LiveData<List<Planner>> getPlanner() { return planner; }
 
     public void insert(Planner planner) { repository.insert(planner); }
+    public void deleteItem(String from, String to, String date) { repository.deleteItem(from, to, date); }
 }
