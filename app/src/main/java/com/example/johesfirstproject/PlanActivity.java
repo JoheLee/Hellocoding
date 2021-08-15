@@ -173,6 +173,6 @@ public class PlanActivity extends AppCompatActivity {
     private String getFormattedDate(int day) {
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.DAY_OF_MONTH, day);
-        return new SimpleDateFormat("dd/EEE", Locale.ENGLISH).format(calendar.getTime());
+        return new SimpleDateFormat("EEE", Locale.ENGLISH).format(calendar.getTime());
     }
 }
