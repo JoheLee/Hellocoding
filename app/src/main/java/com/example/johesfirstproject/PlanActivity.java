@@ -1,10 +1,13 @@
 package com.example.johesfirstproject;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.NumberPicker;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -80,7 +83,8 @@ public class PlanActivity extends AppCompatActivity {
                 // Inflate and set the layout for the dialog
                 // Pass null as the parent view because its going in the dialog layout
                 View view = inflater.inflate(R.layout.dialog, null);
-                // TODO:
+                EditText subject = view.findViewById(R.id.editTextTime);
+
                 NumberPicker picker = view.findViewById(R.id.numberpicker_main_picker);
                 picker.setMaxValue(3);
                 picker.setMinValue(0);
@@ -99,7 +103,14 @@ public class PlanActivity extends AppCompatActivity {
                         .setPositiveButton("Update", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int id) {
-                                // sign in the user ...
+                                if (subject.getText().toString().equals("")) {
+                                    Context context = getApplicationContext();
+                                    CharSequence text = "fill out subject ";
+                                    int duration = Toast.LENGTH_SHORT;
+
+                                    Toast toast = Toast.makeText(context, text, duration);
+                                    toast.show();
+                                }
                             }
                         })
                         .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {

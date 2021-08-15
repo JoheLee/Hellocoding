@@ -28,7 +28,7 @@ public class NewActivity extends AppCompatActivity {
 //                if (binding.checkBox.isChecked()) {
                 if (binding.checkBox.isChecked()) {
                     Context context = getApplicationContext();
-                    CharSequence text = "on Toast!!!! " ;
+                    CharSequence text = "fill out subject " ;
                     int duration = Toast.LENGTH_SHORT ;
 
                     Toast toast = Toast. makeText(context, text, duration) ;
