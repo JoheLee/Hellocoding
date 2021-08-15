@@ -8,6 +8,8 @@ import android.widget.NumberPicker;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
+
 import com.example.johesfirstproject.databinding.PlanactivityBinding;
 
 import java.text.SimpleDateFormat;
@@ -19,17 +21,20 @@ import java.util.Locale;
 public class PlanActivity extends AppCompatActivity {
 
     PlanactivityBinding binding;
+    PlannerViewModel viewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         binding = PlanactivityBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        viewModel = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(PlannerViewModel.class);
+
         Date currentTime = Calendar.getInstance().getTime();
 
-        String currentDate = new SimpleDateFormat("MM-dd-yyyy", Locale.getDefault()).format(currentTime);
+        String currentDate = new SimpleDateFormat("MM-dd-yyyy", Locale.ENGLISH).format(currentTime);
         binding.date.setText(currentDate);
 
         // TODO: Start here
@@ -130,6 +135,6 @@ public class PlanActivity extends AppCompatActivity {
     private String getFormattedDate(int day) {
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.DAY_OF_MONTH, day);
-        return new SimpleDateFormat("dd/EEE", Locale.getDefault()).format(calendar.getTime());
+        return new SimpleDateFormat("dd/EEE", Locale.ENGLISH).format(calendar.getTime());
     }
 }
