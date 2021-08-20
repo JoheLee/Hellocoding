@@ -102,30 +102,30 @@ public class PlanActivity extends AppCompatActivity {
             Planner currentPlanner = currentPlanners.get(i);
             TextView textView = null;
             switch (currentPlanner.from) {
-                case "12 AM": textView = binding.twelveamSubject;
-                case "01 AM": textView = binding.oneamTimeSubject;
-                case "02 AM": textView = binding.twoamTimeSubject;
-                case "03 AM": textView = binding.threeamTimeSubject;
-                case "04 AM": textView = binding.fouramTimeSubject;
-                case "05 AM": textView = binding.fiveamTimeSubject;
-                case "06 AM": textView = binding.sixamTimeSubject;
-                case "07 AM": textView = binding.sevenamTimeSubject;
-                case "08 AM": textView = binding.eightamTimeSubject;
-                case "09 AM": textView = binding.nineamTimeSubject;
-                case "10 AM": textView = binding.tenamTimeSubject;
-                case "11 AM": textView = binding.elevenamTimeSubject;
-                case "12 PM": textView = binding.elevenpmTimeSubject;
-                case "01 PM": textView = binding.onepmTimeSubject;
-                case "02 PM": textView = binding.twopmTimeSubject;
-                case "03 PM": textView = binding.threepmTimeSubject;
-                case "04 PM": textView = binding.fourpmTimeSubject;
-                case "05 PM": textView = binding.fivepmTimeSubject;
-                case "06 PM": textView = binding.sixpmTimeSubject;
-                case "07 PM": textView = binding.sevenpmTimeSubject;
-                case "08 PM": textView = binding.eightpmTimeSubject;
-                case "09 PM": textView = binding.ninepmTimeSubject;
-                case "10 PM": textView = binding.tenpmTimeSubject;
-                case "11 PM": textView = binding.elevenpmTimeSubject;
+                case "12 AM": textView = binding.twelveamSubject;break;
+                case "01 AM": textView = binding.oneamTimeSubject;break;
+                case "02 AM": textView = binding.twoamTimeSubject;break;
+                case "03 AM": textView = binding.threeamTimeSubject;break;
+                case "04 AM": textView = binding.fouramTimeSubject;break;
+                case "05 AM": textView = binding.fiveamTimeSubject;break;
+                case "06 AM": textView = binding.sixamTimeSubject;break;
+                case "07 AM": textView = binding.sevenamTimeSubject;break;
+                case "08 AM": textView = binding.eightamTimeSubject;break;
+                case "09 AM": textView = binding.nineamTimeSubject;break;
+                case "10 AM": textView = binding.tenamTimeSubject;break;
+                case "11 AM": textView = binding.elevenamTimeSubject;break;
+                case "12 PM": textView = binding.twelvepmTimeSubject;break;
+                case "01 PM": textView = binding.onepmTimeSubject;break;
+                case "02 PM": textView = binding.twopmTimeSubject;break;
+                case "03 PM": textView = binding.threepmTimeSubject;break;
+                case "04 PM": textView = binding.fourpmTimeSubject;break;
+                case "05 PM": textView = binding.fivepmTimeSubject;break;
+                case "06 PM": textView = binding.sixpmTimeSubject;break;
+                case "07 PM": textView = binding.sevenpmTimeSubject;break;
+                case "08 PM": textView = binding.eightpmTimeSubject;break;
+                case "09 PM": textView = binding.ninepmTimeSubject;break;
+                case "10 PM": textView = binding.tenpmTimeSubject;break;
+                case "11 PM": textView = binding.elevenpmTimeSubject;break;
             }
             updatePlannerContent(textView, currentPlanner);
         }
@@ -133,14 +133,15 @@ public class PlanActivity extends AppCompatActivity {
 
     private void updatePlannerContent(TextView textView, Planner currentPlanner) {
         textView.setText(currentPlanner.subject);
+        textView.setTextColor(Color.parseColor("#ffffff"));
         if (currentPlanner.category.equals("Study")) {
-            textView.setTextColor(Color.parseColor("#f04e1f"));
+            textView.setBackgroundColor(Color.parseColor("#f04e1f"));
         } else if (currentPlanner.category.equals("Exercise")) {
-            textView.setTextColor(Color.parseColor("#2957d2"));
+            textView.setBackgroundColor(Color.parseColor("#2957d2"));
         } else if (currentPlanner.category.equals("Free Time")) {
-            textView.setTextColor(Color.parseColor("#a173ce"));
+            textView.setBackgroundColor(Color.parseColor("#a173ce"));
         } else if (currentPlanner.category.equals("Sleep")) {
-            textView.setTextColor(Color.parseColor("#5e8c31"));
+            textView.setBackgroundColor(Color.parseColor("#5e8c31"));
         }
     }
 

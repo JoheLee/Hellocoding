@@ -187,7 +187,7 @@
                 <TextView
                     android:id="@+id/twelveamSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/twelveamTime"
@@ -221,7 +221,7 @@
                 <TextView
                     android:id="@+id/oneamTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/oneamTime"
@@ -253,7 +253,7 @@
                 <TextView
                     android:id="@+id/twoamTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/twoamTime"
@@ -285,7 +285,7 @@
                 <TextView
                     android:id="@+id/threeamTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/threeamTime"
@@ -317,7 +317,7 @@
                 <TextView
                     android:id="@+id/fouramTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/fouramTime"
@@ -349,7 +349,7 @@
                 <TextView
                     android:id="@+id/fiveamTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/fiveamTime"
@@ -381,7 +381,7 @@
                 <TextView
                     android:id="@+id/sixamTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/sixamTime"
@@ -413,7 +413,7 @@
                 <TextView
                     android:id="@+id/sevenamTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/sevenamTime"
@@ -445,7 +445,7 @@
                 <TextView
                     android:id="@+id/eightamTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/eightamTime"
@@ -477,7 +477,7 @@
                 <TextView
                     android:id="@+id/nineamTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/nineamTime"
@@ -508,7 +508,7 @@
                 <TextView
                     android:id="@+id/tenamTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/tenamTime"
@@ -540,7 +540,7 @@
                 <TextView
                     android:id="@+id/elevenamTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/elevenamTime"
@@ -571,7 +571,7 @@
                 <TextView
                     android:id="@+id/twelvepmTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/twelvepmTime"
@@ -602,7 +602,7 @@
                 <TextView
                     android:id="@+id/onepmTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/onepmTime"
@@ -633,7 +633,7 @@
                 <TextView
                     android:id="@+id/twopmTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/twopmTime"
@@ -664,7 +664,7 @@
                 <TextView
                     android:id="@+id/threepmTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/threepmTime"
@@ -695,7 +695,7 @@
                 <TextView
                     android:id="@+id/fourpmTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/fourpmTime"
@@ -726,7 +726,7 @@
                 <TextView
                     android:id="@+id/fivepmTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/fivepmTime"
@@ -757,7 +757,7 @@
                 <TextView
                     android:id="@+id/sixpmTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/sixpmTime"
@@ -788,7 +788,7 @@
                 <TextView
                     android:id="@+id/sevenpmTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/sevenpmTime"
@@ -819,7 +819,7 @@
                 <TextView
                     android:id="@+id/eightpmTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/eightpmTime"
@@ -850,7 +850,7 @@
                 <TextView
                     android:id="@+id/ninepmTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/ninepmTime"
@@ -881,7 +881,7 @@
                 <TextView
                     android:id="@+id/tenpmTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/tenpmTime"
@@ -912,7 +912,7 @@
                 <TextView
                     android:id="@+id/elevenpmTimeSubject"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/elevenpmTime"
