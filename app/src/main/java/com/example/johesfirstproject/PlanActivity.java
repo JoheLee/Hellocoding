@@ -2,11 +2,13 @@ package com.example.johesfirstproject;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.NumberPicker;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -98,9 +100,47 @@ public class PlanActivity extends AppCompatActivity {
     private void updatePlanner(List<Planner> currentPlanners) {
         for (int i = 0; i < currentPlanners.size(); i++) {
             Planner currentPlanner = currentPlanners.get(i);
+            TextView textView = null;
             switch (currentPlanner.from) {
-                case "12 AM": binding.twelveamSubject.setText(currentPlanner.subject);
+                case "12 AM": textView = binding.twelveamSubject;
+                case "01 AM": textView = binding.oneamTimeSubject;
+                case "02 AM": textView = binding.twoamTimeSubject;
+                case "03 AM": textView = binding.threeamTimeSubject;
+                case "04 AM": textView = binding.fouramTimeSubject;
+                case "05 AM": textView = binding.fiveamTimeSubject;
+                case "06 AM": textView = binding.sixamTimeSubject;
+                case "07 AM": textView = binding.sevenamTimeSubject;
+                case "08 AM": textView = binding.eightamTimeSubject;
+                case "09 AM": textView = binding.nineamTimeSubject;
+                case "10 AM": textView = binding.tenamTimeSubject;
+                case "11 AM": textView = binding.elevenamTimeSubject;
+                case "12 PM": textView = binding.elevenpmTimeSubject;
+                case "01 PM": textView = binding.onepmTimeSubject;
+                case "02 PM": textView = binding.twopmTimeSubject;
+                case "03 PM": textView = binding.threepmTimeSubject;
+                case "04 PM": textView = binding.fourpmTimeSubject;
+                case "05 PM": textView = binding.fivepmTimeSubject;
+                case "06 PM": textView = binding.sixpmTimeSubject;
+                case "07 PM": textView = binding.sevenpmTimeSubject;
+                case "08 PM": textView = binding.eightpmTimeSubject;
+                case "09 PM": textView = binding.ninepmTimeSubject;
+                case "10 PM": textView = binding.tenpmTimeSubject;
+                case "11 PM": textView = binding.elevenpmTimeSubject;
             }
+            updatePlannerContent(textView, currentPlanner);
+        }
+    }
+
+    private void updatePlannerContent(TextView textView, Planner currentPlanner) {
+        textView.setText(currentPlanner.subject);
+        if (currentPlanner.category.equals("Study")) {
+            textView.setTextColor(Color.parseColor("#f04e1f"));
+        } else if (currentPlanner.category.equals("Exercise")) {
+            textView.setTextColor(Color.parseColor("#2957d2"));
+        } else if (currentPlanner.category.equals("Free Time")) {
+            textView.setTextColor(Color.parseColor("#a173ce"));
+        } else if (currentPlanner.category.equals("Sleep")) {
+            textView.setTextColor(Color.parseColor("#5e8c31"));
         }
     }
 

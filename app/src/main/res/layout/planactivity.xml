@@ -188,6 +188,7 @@
                     android:id="@+id/twelveamSubject"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:maxLines="2"
                     android:layout_marginLeft="16dp"
                     app:layout_constraintLeft_toRightOf="@+id/twelveamTime"
                     app:layout_constraintRight_toRightOf="parent"
@@ -203,6 +204,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/twelveam">
 
                 <TextView
+                    android:id="@+id/oneamTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="01 AM"
@@ -216,6 +218,16 @@
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
 
+                <TextView
+                    android:id="@+id/oneamTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/oneamTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -226,6 +238,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/oneam">
 
                 <TextView
+                    android:id="@+id/twoamTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="02 AM"
@@ -237,6 +250,16 @@
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
 
+                <TextView
+                    android:id="@+id/twoamTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/twoamTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -247,6 +270,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/twoam">
 
                 <TextView
+                    android:id="@+id/threeamTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="03 AM"
@@ -258,6 +282,16 @@
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
 
+                <TextView
+                    android:id="@+id/threeamTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/threeamTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -268,6 +302,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/threeam">
 
                 <TextView
+                    android:id="@+id/fouramTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="04 AM"
@@ -279,6 +314,16 @@
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
 
+                <TextView
+                    android:id="@+id/fouramTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/fouramTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -289,6 +334,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/fouram">
 
                 <TextView
+                    android:id="@+id/fiveamTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="05 AM"
@@ -300,6 +346,16 @@
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
 
+                <TextView
+                    android:id="@+id/fiveamTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/fiveamTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -310,6 +366,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/fiveam">
 
                 <TextView
+                    android:id="@+id/sixamTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="06 AM"
@@ -321,6 +378,16 @@
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
 
+                <TextView
+                    android:id="@+id/sixamTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/sixamTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -331,6 +398,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/sixam">
 
                 <TextView
+                    android:id="@+id/sevenamTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="07 AM"
@@ -342,6 +410,16 @@
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
 
+                <TextView
+                    android:id="@+id/sevenamTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/sevenamTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -352,6 +430,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/sevenam">
 
                 <TextView
+                    android:id="@+id/eightamTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="08 AM"
@@ -363,6 +442,16 @@
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
 
+                <TextView
+                    android:id="@+id/eightamTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/eightamTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -373,6 +462,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/eightam">
 
                 <TextView
+                    android:id="@+id/nineamTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="09 AM"
@@ -384,6 +474,16 @@
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
 
+                <TextView
+                    android:id="@+id/nineamTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/nineamTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -394,6 +494,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/nineam">
 
                 <TextView
+                    android:id="@+id/tenamTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10 AM"
@@ -404,6 +505,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/tenamTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/tenamTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -415,6 +525,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tenam">
 
                 <TextView
+                    android:id="@+id/elevenamTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="11 AM"
@@ -426,6 +537,16 @@
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
 
+                <TextView
+                    android:id="@+id/elevenamTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/elevenamTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -436,6 +557,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/elevenam">
 
                 <TextView
+                    android:id="@+id/twelvepmTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="12 PM"
@@ -446,6 +568,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/twelvepmTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/twelvepmTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -457,6 +588,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/twelvepm">
 
                 <TextView
+                    android:id="@+id/onepmTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="01 PM"
@@ -467,6 +599,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/onepmTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/onepmTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -478,6 +619,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/onepm">
 
                 <TextView
+                    android:id="@+id/twopmTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="02 PM"
@@ -488,6 +630,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/twopmTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/twopmTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -499,6 +650,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/twopm">
 
                 <TextView
+                    android:id="@+id/threepmTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="03 PM"
@@ -509,6 +661,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/threepmTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/threepmTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -520,6 +681,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/threepm">
 
                 <TextView
+                    android:id="@+id/fourpmTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4 PM"
@@ -530,6 +692,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/fourpmTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/fourpmTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -541,6 +712,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/fourpm">
 
                 <TextView
+                    android:id="@+id/fivepmTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5 PM"
@@ -551,6 +723,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/fivepmTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/fivepmTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -562,6 +743,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/fivepm">
 
                 <TextView
+                    android:id="@+id/sixpmTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="6 PM"
@@ -572,6 +754,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/sixpmTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/sixpmTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -583,6 +774,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/sixpm">
 
                 <TextView
+                    android:id="@+id/sevenpmTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="7 PM"
@@ -593,6 +785,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/sevenpmTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/sevenpmTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -604,6 +805,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/sevenpm">
 
                 <TextView
+                    android:id="@+id/eightpmTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="8 PM"
@@ -614,6 +816,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/eightpmTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/eightpmTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -625,6 +836,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/eightpm">
 
                 <TextView
+                    android:id="@+id/ninepmTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="9 PM"
@@ -635,6 +847,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/ninepmTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/ninepmTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -646,6 +867,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/ninepm">
 
                 <TextView
+                    android:id="@+id/tenpmTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10 PM"
@@ -656,6 +878,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/tenpmTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/tenpmTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -667,6 +898,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tenpm">
 
                 <TextView
+                    android:id="@+id/elevenpmTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="11 PM"
@@ -677,6 +909,15 @@
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"
                     tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/elevenpmTimeSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toRightOf="@+id/elevenpmTime"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
