@@ -135,13 +135,13 @@ public class PlanActivity extends AppCompatActivity {
         textView.setText(currentPlanner.subject);
         textView.setTextColor(Color.parseColor("#ffffff"));
         if (currentPlanner.category.equals("Study")) {
-            textView.setBackgroundColor(Color.parseColor("#f04e1f"));
+            textView.setBackgroundColor(Color.parseColor("#c9b2d9"));
         } else if (currentPlanner.category.equals("Exercise")) {
-            textView.setBackgroundColor(Color.parseColor("#2957d2"));
+            textView.setBackgroundColor(Color.parseColor("#7fbfbf"));
         } else if (currentPlanner.category.equals("Free Time")) {
-            textView.setBackgroundColor(Color.parseColor("#a173ce"));
+            textView.setBackgroundColor(Color.parseColor("#b3f3f2"));
         } else if (currentPlanner.category.equals("Sleep")) {
-            textView.setBackgroundColor(Color.parseColor("#5e8c31"));
+            textView.setBackgroundColor(Color.parseColor("#f2d577"));
         }
     }
 
@@ -186,9 +186,9 @@ public class PlanActivity extends AppCompatActivity {
                                 }
                             }
                         })
-                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        .setNegativeButton("Delete", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-
+                                viewModel.deleteItem(startTime, endTime, currentlySelectedDate);
                             }
                         });
                 builder.create().show();
