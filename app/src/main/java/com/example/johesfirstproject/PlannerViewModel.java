@@ -1,6 +1,7 @@
 package com.example.johesfirstproject;
 
 import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import java.util.List;
@@ -14,5 +15,9 @@ public class PlannerViewModel extends ViewModel {
     LiveData<List<Planner>> getPlanner() { return planner; }
 
     public void insert(Planner planner) { repository.insert(planner); }
-    public void deleteItem(String from, String to, String date) { repository.deleteItem(from, to, date); }
+    public void deleteItem(String from, String to, String date) {
+        Planner planner = repository.getItem(from, to, date);
+        if (planner == null) return;
+        repository.deleteItem(planner);
+    }
 }

@@ -82,19 +82,101 @@ public class PlanActivity extends AppCompatActivity {
         binding.tenpm.setOnClickListener(onClickListener("10 PM", "11 PM"));
         binding.elevenpm.setOnClickListener(onClickListener("11 PM", "12 AM"));
 
-        viewModel.getPlanner().observe(this, new Observer<List<Planner>>() {
-            @Override
-            public void onChanged(List<Planner> planners) {
-                List<Planner> currentPlanners = new ArrayList<>();
-                for (int i = 0; i < planners.size(); i++) {
-                    if (planners.get(i).date.equals(currentlySelectedDate)) {
-                        currentPlanners.add(planners.get(i));
-                    }
-                }
+        viewModel.getPlanner().observe(this, observer);
 
-                updatePlanner(currentPlanners);
+        binding.date1.setOnClickListener(updateSelectedDay(0, source, binding.date1));
+        binding.date2.setOnClickListener(updateSelectedDay(1, source, binding.date2));
+        binding.date3.setOnClickListener(updateSelectedDay(2, source, binding.date3));
+        binding.date4.setOnClickListener(updateSelectedDay(3, source, binding.date4));
+        binding.date5.setOnClickListener(updateSelectedDay(4, source, binding.date5));
+        binding.date6.setOnClickListener(updateSelectedDay(5, source, binding.date6));
+        binding.date7.setOnClickListener(updateSelectedDay(6, source, binding.date7));
+    }
+
+    private View.OnClickListener updateSelectedDay(int day, ArrayList<String> source, TextView textView) {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.date1.setTextColor(Color.parseColor("#a8a5a5"));
+                binding.date2.setTextColor(Color.parseColor("#a8a5a5"));
+                binding.date3.setTextColor(Color.parseColor("#a8a5a5"));
+                binding.date4.setTextColor(Color.parseColor("#a8a5a5"));
+                binding.date5.setTextColor(Color.parseColor("#a8a5a5"));
+                binding.date6.setTextColor(Color.parseColor("#a8a5a5"));
+                binding.date7.setTextColor(Color.parseColor("#a8a5a5"));
+
+                textView.setTextColor(Color.parseColor("#000000"));
+                currentlySelectedDate = source.get(day);
+                viewModel.getPlanner().removeObserver(observer);
+                viewModel.getPlanner().observe(PlanActivity.this, observer);
             }
-        });
+        };
+    }
+
+    private Observer<List<Planner>> observer = new Observer<List<Planner>>() {
+        @Override
+        public void onChanged(List<Planner> planners) {
+            clear();
+            List<Planner> currentPlanners = new ArrayList<>();
+            for (int i = 0; i < planners.size(); i++) {
+                if (planners.get(i).date.equals(currentlySelectedDate)) {
+                    currentPlanners.add(planners.get(i));
+                }
+            }
+
+            updatePlanner(currentPlanners);
+        }
+    };
+
+    private void clear() {
+        binding.twelveamSubject.setText("");
+        binding.twelveamSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.oneamTimeSubject.setText("");
+        binding.oneamTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.twoamTimeSubject.setText("");
+        binding.twoamTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.threeamTimeSubject.setText("");
+        binding.threeamTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.fouramTimeSubject.setText("");
+        binding.fouramTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.fiveamTimeSubject.setText("");
+        binding.fiveamTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.sixamTimeSubject.setText("");
+        binding.sixamTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.sevenamTimeSubject.setText("");
+        binding.sevenamTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.eightamTimeSubject.setText("");
+        binding.eightamTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.nineamTimeSubject.setText("");
+        binding.nineamTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.tenamTimeSubject.setText("");
+        binding.tenamTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.elevenamTimeSubject.setText("");
+        binding.elevenamTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.twelvepmTimeSubject.setText("");
+        binding.twelvepmTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.onepmTimeSubject.setText("");
+        binding.onepmTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.twopmTimeSubject.setText("");
+        binding.twopmTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.threepmTimeSubject.setText("");
+        binding.threepmTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.fourpmTimeSubject.setText("");
+        binding.fourpmTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.fivepmTimeSubject.setText("");
+        binding.fivepmTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.sixpmTimeSubject.setText("");
+        binding.sixpmTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.sevenpmTimeSubject.setText("");
+        binding.sevenpmTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.eightpmTimeSubject.setText("");
+        binding.eightpmTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.ninepmTimeSubject.setText("");
+        binding.ninepmTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.tenpmTimeSubject.setText("");
+        binding.tenpmTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
+        binding.elevenpmTimeSubject.setText("");
+        binding.elevenpmTimeSubject.setBackgroundColor(Color.parseColor("#ffffff"));
     }
 
     private void updatePlanner(List<Planner> currentPlanners) {
@@ -181,14 +263,13 @@ public class PlanActivity extends AppCompatActivity {
                                     Toast toast = Toast.makeText(context, text, duration);
                                     toast.show();
                                 } else {
-                                    viewModel.deleteItem(startTime, endTime, currentlySelectedDate);
                                     viewModel.insert(new Planner(subjectText, category, startTime, endTime, currentlySelectedDate));
                                 }
                             }
                         })
-                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        .setNegativeButton("Delete", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-
+                                viewModel.deleteItem(startTime, endTime, currentlySelectedDate);
                             }
                         });
                 builder.create().show();
