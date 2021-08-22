@@ -1,10 +1,6 @@
-package com.example.johesfirstproject;
+package com.hellocodinng.johesfirstproject;
 
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MediatorLiveData;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.Transformations;
 
 import java.util.List;
 

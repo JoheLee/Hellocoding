@@ -1,15 +1,14 @@
-package com.example.johesfirstproject;
+package com.hellocodinng.johesfirstproject;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.johesfirstproject.databinding.ActivityMainBinding;
-import com.example.johesfirstproject.databinding.ActivityNewBinding;
+import com.hellocodinng.johesfirstproject.databinding.ActivityMainBinding;
+import com.hellocodinng.johesfirstproject.databinding.ActivityNewBinding;
 
 public class NewActivity extends AppCompatActivity {
 

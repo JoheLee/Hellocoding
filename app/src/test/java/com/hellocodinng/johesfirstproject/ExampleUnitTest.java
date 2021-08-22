@@ -1,4 +1,4 @@
-package com.example.johesfirstproject;
+package com.hellocodinng.johesfirstproject;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.johesfirstproject;
+package com.hellocodinng.johesfirstproject;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.johesfirstproject.databinding.PlanactivityBinding;
+import com.hellocodinng.johesfirstproject.databinding.PlanactivityBinding;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

@@ -9,7 +9,7 @@ android {
         viewBinding true
     }
     defaultConfig {
-        applicationId "com.example.johesfirstproject"
+        applicationId "com.hellocoding.johesfirstproject"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1

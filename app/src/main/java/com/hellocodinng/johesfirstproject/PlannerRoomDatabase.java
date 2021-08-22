@@ -1,4 +1,4 @@
-package com.example.johesfirstproject;
+package com.hellocodinng.johesfirstproject;
 
 import androidx.room.Database;
 import androidx.room.Room;

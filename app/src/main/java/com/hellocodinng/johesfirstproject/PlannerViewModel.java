@@ -1,7 +1,6 @@
-package com.example.johesfirstproject;
+package com.hellocodinng.johesfirstproject;
 
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import java.util.List;
